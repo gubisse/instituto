@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicial | IMT - Professor</title>
+
+	<link rel="stylesheet" type="text/css" href="pagina/estilo/css/bootstrap.min.css">
+	<style type="text/css">
+
+		tr>td, tr>th>.btn-tipo-lista{
+			padding-top: 5px !important;
+			padding-bottom: 5px !important;
+			border: solid 1px rgba(255, 255, 255, 1.0) !important;
+			background-color: rgba(253, 149, 149, 1.0) !important;
+			color: rgba(192, 0, 0, 1.0) !important;
+			text-align: start !important;
+			text-transform: none !important;
+
+		}
+
+
+	</style>
+</head>
+<body class="container-fluid">
+
+
+	<div class="mt-5">
+		<div class="row">
+			<div class="col-md-4 text-uppercase text-center">
+				<div class="">
+					<h3>Instituto mira tione</h3>
+				</div>
+			</div>
+			<div class="col">
+				<div class="">
+					<h3>
+						<span name="nome"></span>
+						<span name="apelido"></span>
+					</h3>
+				</div>
+				
+			</div>
+			<div class="col-md-1">
+				<div>
+					<h3>
+						<a class="btn btn-danger" href="terminar-sessao">Sair</a>
+					</h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 ">
+			
+			<div class="">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Cursos</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Curso 1</td>
+						</tr>
+						<tr>
+							<td>Curso 1</td>
+						</tr>
+						<tr>
+							<td>Curso 1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>	
+		<div class="col">
+			<div class="">
+				<table class="table">
+					<thead>
+						<tr>
+							<th colspan='2'>
+								<span class="btn-tipo-lista" data-bs-toggle="modal" data-bs-target="#abrirMenuCadeira" >1 cadeira</span>
+								<span class="btn-tipo-lista">1 cadeira</span>
+								<span class="btn-tipo-lista">1 cadeira</span>
+							</th>
+						</tr>
+						<tr>
+							<th colspan='2' class="text-center">20 Estudantes</th>
+							
+						</tr>
+						<tr>
+							<th>Nome completo</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+
+			
+
+						<tr data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+							<td>Nome</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Nome</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Nome</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Nome</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Nome</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Nome</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>	
+	</div>
+
+	<div class="text-center py-2 border-bottom border-top mt-5 mb-2 fixed-bottom">
+		Todos os direitos reservados pelo IMT @ 2024
+	</div>
+
+
+
+	<modal>
+
+		<!-- Modal -->
+		<div class="modal fade" id="abrirMenuCadeira" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Da cadeira <span>X</span></h5>
+					</div>
+					<div class="modal-body">
+						<div class="d-grid">
+							<button class="btn btn-primary my-1"><a>Estudantes</a></button>
+							<button class="btn btn-primary my-1"><a>Conteudo da cadeira</a></button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Cadeira x</h5>
+						<h5 class="modal-title" id="staticBackdropLabel">Proxima abertura de campo para ad nota</h5>
+					</div>
+					<div class="modal-body">
+						<div>
+							<table class="table">
+								<tbody>
+									<tr>
+										<th>Curso</th>
+										<td class="bg-white"><input class="form-control" type="number" name="curso" readonly></td>
+									</tr>
+									<tr>
+										<th>Nome do estudante</th>
+										<td class="bg-white"><input class="form-control" type="number" name="nome_completo" readonly></td>
+									</tr>
+									<tr>
+										<th>Ano de frequencia</th>
+										<td class="bg-white"><input class="form-control" type="number" name="ano_frequencia" readonly></td>
+									</tr>
+									<tr>
+										<th>Primeira nota</th>
+										<td class="bg-white"><input class="form-control" type="number" name="nota1"></td>
+									</tr>
+									<tr>
+										<th>Segunda nota</th>
+										<td class="bg-white"><input class="form-control" type="number" name="nota2"></td>
+									</tr>
+									<tr>
+										<th>Nota de pratica</th>
+										<td class="bg-white "><input class="form-control" type="number" name="nota3"></td>
+									</tr>
+									<tr>
+										<th>Media de admissao</th>
+										<td class="bg-white"><input class="form-control" type="number" name="ma" readonly></td>
+									</tr>
+									<tr>
+										<th>Exame</th>
+										<td class="bg-white"><input class="form-control" type="number" name="exame"></td>
+									</tr>
+									<tr>
+										<th>Media final</th>
+										<td class="bg-white"><input class="form-control" type="number" name="mf" readonly></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary">Submeter</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</modal>
+
+	<script type="text/javascript">
+        // Preencha a variável `dados` com os itens do array `dados` do servidor
+        var usuario = []
+        <% dados.forEach(item => { %>
+            usuario =  {
+            	id: '<%= item.user.id %>',
+            	nome: '<%= item.user.nome %>',
+            	apelido: '<%= item.user.apelido %>',
+            	acesso: '<%= item.user.acesso %>'
+        	}
+        <% }); %>
+
+        document.querySelector('h3>span[name="nome"]').innerText = usuario.nome;
+        document.querySelector('h3>span[name="apelido"]').innerText = usuario.apelido;
+        document.querySelector('input[name="nome_completo"]').value = usuario.nome;
+
+    </script>
+	<script type="text/javascript" src="pagina/estilo/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

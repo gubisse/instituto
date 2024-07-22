@@ -1,0 +1,86 @@
+
+
+var paginar = document.querySelector('div[name="pagina"]');
+
+console.log("<%= pagina %>")
+
+for (var i = 0; i < 4; i++) {
+	var p = document.createElement('p');
+	var a = document.createElement('a');
+	a.innerText = i;
+	p.appendChild(a);
+	paginar.appendChild(p)
+}
+
+/*
+<%- include('variavel') %> 
+
+resgisto = {file:"<%= dados.file %>", texto: '<%= dados.texto %>'}
+
+
+
+document.querySelectorAll('button').forEach(btn =>{
+	btn.addEventListener('click', evento =>{	
+		if(evento.target.name === "novaImg"){
+			libera('p')
+		}else if(evento.target.name === "visualizarImg"){
+
+		}else if(evento.target.name === "copiarTexto"){
+			//Copiar o que o elemento p[name="resposta possui"]
+			alert("configure para copiar o que o elemento p[name='resposta'] pegou")
+		}else if(evento.target.name === "reanalizarIgm"){
+			if(!resgisto.file){
+				libera('erro')
+				document.querySelector('div[name="erro"] > p[name="erro"]').innerText = "Erro, nao existe imagem para analizar, indique nova imagem"
+				
+			}else{
+				var a = document.createElement('a')
+				a.href="/reanalizarImg"
+				document.body.appendChild(a)
+				a.click()
+
+
+			}
+		}
+	})
+})
+
+
+
+
+acao()
+function acao(){
+	if ('<%= dados.estado %>' === "valido" ) {
+		if ('<%= dados.file %>' !== "" ) {	
+			libera('r')
+			var textoPronto = ""
+			textoPronto = resgisto.texto.replace(/(\d+\.\s+|[a-r]\)\s+)/gi, '\n$1');
+			//textoPronto = resgisto.texto.replace(/(\d+\.\s+|[a-r][\/\)])/gi, '\n$1');
+
+			document.querySelector('div[name="resposta"] > p[name="resposta"]').innerText = textoPronto // resgisto.texto.replace(/[/]/g, '\n')
+
+		}else{
+			libera('erro')
+			document.querySelector('div[name="erro"] > p[name="erro"]').innerText = "Erro ao analizar a imagem, por favor tente mais, com uma imagem mais bem visivel, o sunficiente para conseguirmos seguir"
+
+		}
+	}
+}
+
+function libera(valor){
+	if(valor === 'r'){
+		document.querySelector('div[name="pergunta"] ').classList.add("d-none")
+		document.querySelector('div[name="resposta"] ').classList.remove("d-none")	
+		document.querySelector('div[name="erro"] ').classList.add("d-none")		
+	}else if(valor === 'p'){
+		document.querySelector('div[name="pergunta"] ').classList.remove("d-none")
+		document.querySelector('div[name="resposta"] ').classList.add("d-none")	
+		document.querySelector('div[name="erro"] ').classList.add("d-none")
+	}else if(valor === 'erro'){
+		document.querySelector('div[name="pergunta"] ').classList.add("d-none")
+		document.querySelector('div[name="resposta"] ').classList.add("d-none")	
+		document.querySelector('div[name="erro"] ').classList.remove("d-none")
+	}
+}
+
+*/
